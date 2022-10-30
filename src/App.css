@@ -1,0 +1,32 @@
+#root {
+  /*max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 100%; 
+  background-color: #f3fbfb;
+ /* background-color: #f3fbfb;*/
+ 
+ 
+  height: 100%; 
+  background-color: #f3fbfb;
+  margin: 0 auto;
+}
+/* .container {
+  background-color: #f3fbfb;
+} */
+.textError {
+  color: red;
+  
+}
+.text {
+  color: #052d75;
+  
+}
+.textSecondary{
+  color:#9f9f9f;
+}
+.Col{
+  margin-left: 25px;
+}
+ 
