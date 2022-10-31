@@ -5,8 +5,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Stack from 'react-bootstrap/Stack';
-
 import { useFormik } from "formik";
 import { formSchema } from "../utils/validation/formRules";
 
@@ -33,17 +31,14 @@ const PersonForm = (props) => {
       setIsDisabled(false);
     }
   }, [values]);
- 
+
   return (
- 
     <Container>
-      <Row className="justify-content-center"  >
+      <Row className="justify-content-center">
         <Col xs={12} md={10}>
-        <p className="textSecondary">Todos los campos son obligatorios</p>
-          
+          <p className="textSecondary">Todos los campos son obligatorios</p>
         </Col>
         <Col xs={12} md={10}>
-       
           <Form.Label className="text">Tipo de documento</Form.Label>
         </Col>
         <Col xs={12} md={10}>
@@ -52,6 +47,7 @@ const PersonForm = (props) => {
             name="documentType"
             value={values.documentType || ""}
             onChange={handleChange}
+            style={{ width: "50%" }}
           >
             <option value=""></option>
             <option value="CC">Cédula de ciudadanía</option>
@@ -74,6 +70,7 @@ const PersonForm = (props) => {
             value={values.document || ""}
             onChange={handleChange}
             required
+            style={{ width: "50%" }}
           />
           {errors.document && <p className="textError">{errors.document}</p>}
         </Col>
@@ -88,14 +85,14 @@ const PersonForm = (props) => {
                     backgroundColor: "#dce4e4",
                     border: "1px solid #dce4e4",
                     borderRadius: "25px",
-                    width: "20%",
+                    width: "250px",
                     color: "#B0B0B0",
                   }
                 : {
                     backgroundColor: "#052d75",
                     border: "1px solid #052d75",
                     borderRadius: "25px",
-                    width: "20%",
+                    width: "250px",
                   }
             }
             variant="primary"

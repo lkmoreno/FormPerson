@@ -15,29 +15,37 @@ const ResultPerson = (props) => {
 
   return (
     <Container>
-      <Row className="justify-content-md-center">
+      <Row className="justify-content-center">
         <Col xs={12} md={10}>
           <h5> Información básica</h5>
         </Col>
       </Row>
-      <Row className="justify-content-md-center">
+      <Row className="justify-content-center">
         <Col xs={12} md={10}>
           <Form.Group>
             <Form.Label className="text">Primer apellido</Form.Label>
-            <Form.Control placeholder={"Perez"} disabled />
+            <Form.Control
+              placeholder={"Perez"}
+              disabled
+              style={{ width: "50%" }}
+            />
           </Form.Group>
         </Col>
       </Row>
-      <Row className="justify-content-md-center">
+      <Row className="justify-content-center">
         <Col xs={12} md={10}>
           <Form.Group>
             <Form.Label className="text">Primer nombre</Form.Label>
-            <Form.Control placeholder={"Miguel"} disabled />
+            <Form.Control
+              placeholder={"Miguel"}
+              disabled
+              style={{ width: "50%" }}
+            />
           </Form.Group>
         </Col>
       </Row>
       <br />
-      <Row className="justify-content-md-center">
+      <Row className="justify-content-center">
         <Col xs={12} md={10}>
           <Button
             size="lg"
